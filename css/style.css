@@ -1,0 +1,66 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 20px;
+	margin: 0;
+}
+
+.welcome-page{
+	background-size:auto; 
+}
+
+.center{
+	text-align: center;
+}
+
+.padding-free{
+	padding: 0;
+}
+
+.p1-text h1{
+	position: absolute;
+	top: 130px;
+	text-align: center;
+	width: 100%;
+	padding: 0 25%;
+	color: #26CEFF;
+	font-size: 6rem;
+	font-family: 'Pacifico', cursive;
+}
+
+.welcome-page-back{
+	width: 100%;
+	opacity: .5;
+	margin: 0;
+
+}
+.welcome-page-back1{
+	position: absolute;
+	width: 100%;
+	opacity: .5;
+	margin: 0;
+
+}
+
+.p1-button {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding: 0 25%;
+	top: 400px;
+	opacity: .8;
+}
+
+.p1-button button{
+	display: inline-block;
+	border-radius: 180px;
+	font-size: 50px;
+	padding: 25px 35px;
+}
+
+.p1-button div{
+	margin-top: 50px;
+	font-family: 'Architects Daughter', cursive;
+}
