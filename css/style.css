@@ -9,6 +9,7 @@ html{
 
 .welcome-page{
 	background-size:auto; 
+	display: block;
 	display: none;
 }
 
@@ -128,7 +129,6 @@ html{
 
 .footer-1{
 	margin-top: 120px;
-	margin-bottom: 120px;
 	background-color: #879488;
 	opacity: .6;
 }
@@ -137,3 +137,4 @@ html{
 	font-family: 'Pacifico', cursive;
 	font-size: 1.5rem;
 }
+
