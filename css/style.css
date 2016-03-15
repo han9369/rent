@@ -138,3 +138,10 @@ html{
 	font-size: 1.5rem;
 }
 
+.rent{
+	display: none;
+}
+
+.form-horizontal{
+	margin: 10% 30%;
+}
