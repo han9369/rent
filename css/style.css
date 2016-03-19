@@ -9,11 +9,11 @@ html{
 
 .welcome-page{
 	background-size:auto; 
-	display: none;
+	display: block;
 }
 
 .rent{
-	display: block;
+	display: none;
 }
 
 .for-rent{
