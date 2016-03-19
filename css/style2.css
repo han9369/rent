@@ -1,0 +1,376 @@
+
+.information-introduce{
+	text-align:center;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 20px;
+	margin: 0;
+}
+
+.welcome-page{
+	background-size:auto; 
+	display: none;
+}
+
+.rent{
+	display: block;
+}
+
+.for-rent{
+	display: none;
+}
+
+.center{
+	text-align: center;
+}
+
+.padding-free{
+	padding: 0;
+}
+
+.p1-text h1{
+	position: absolute;
+	top: 130px;
+	text-align: center;
+	width: 100%;
+	padding: 0 25%;
+	color: #26CEFF;
+	font-size: 6rem;
+	font-family: 'Pacifico', cursive;
+}
+
+<<<<<<< HEAD
+.welcome-page-back{
+	width: 100%;
+	opacity: .5;
+	margin: 0;
+
+}
+.welcome-page-back1{
+	position: absolute;
+	width: 100%;
+	opacity: .5;
+	margin: 0;
+}
+
+.p1-button {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding: 0 25%;
+	top: 400px;
+	opacity: .8;
+}
+
+.p1-button button{
+	display: inline-block;
+	border-radius: 180px;
+	font-size: 50px;
+	padding: 25px 35px;
+}
+
+.p1-button div{
+	margin-top: 50px;
+	font-family: 'Architects Daughter', cursive;
+}
+
+.desk-nav li{
+	display: inline-block;
+	padding-right: 50px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin: 0;
+}
+
+.desk-nav ul{
+	margin: 0;
+	text-align: right;
+<<<<<<< HEAD
+	padding-right: 11%;
+
+}
+
+
+.desk-nav li a{
+	color: #26CEFF;
+}
+
+.p2-text h1{
+	position: absolute;
+	top: 19px;
+	text-align: left;
+	padding-left: 15%;
+	color: #26CEFF;
+	font-size: 3rem;
+	font-family: 'Pacifico', cursive;
+}
+<<<<<<< HEAD
+
+=======
+>>>>>>> refs/remotes/origin/edisoncao
+.btn-group a{
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-left: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.btn-group{
+    left: 50%;
+    width: 863px;
+    margin-left: -431.5px;
+<<<<<<< HEAD
+}
+
+.thumbnails{
+	/*border: 1px solid red;*/
+	margin-bottom: 60px;
+}
+
+.thumbnails li{
+	display: inline-block;
+
+}
+
+.pagination{
+	position: absolute;
+	left: 50%;
+	width: 295px;
+	margin-left: -145px;
+	margin-top: -40px;
+}
+
+.pager{
+	margin-top: 1%;
+	left: 50%;
+    width: 253px;
+    margin-left: -127.5px;
+    position: absolute;
+}
+
+.footer-1{
+	margin-top: 120px;
+	background-color: #879488;
+	opacity: .6;
+}
+
+.rent-button{
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5rem;
+}
+
+
+.form-horizontal{
+	margin: 10% 30%;
+}
+
+
+
+
+/*hover-effect*/
+.hovereffect {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+margin:50px 0 0;
+padding:7px 14px;
+}
+
+.hovereffect a.info:hover {
+box-shadow:0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffect:hover,.hovereffect:hover a.info {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}
+/*hover-effect*/
+
+
+
+.hamburger div{
+	width: 30px;
+	height: 5px;
+	background-color: #26CEFF;
+	margin-top: 5px;
+}
+
+.mobile-nav{
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	opacity: 0.7;
+	padding: 6px;
+	padding-top: 2px;
+	display: none;
+}
+
+@media(max-width: 994px){
+
+	.p2-text{
+		display: none;
+	}
+
+	.desk-nav{
+		display: none;
+	}
+
+	.mobile-nav{
+		display: block;
+	}
+	nav{
+		top: 0;
+	}
+}
+
+@media(max-width: 924px){
+	.btn-group{
+	    left: 57.5%;
+	    width: 763px;
+	    margin-left: -431.5px;
+	}
+
+	.btn-group a{
+		padding-right: 50px;
+		padding-left: 50px;
+		margin-left: 0px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+}
+
+@media(max-width: 788px){
+	.btn-group{
+	    left: 77.5%;
+	    width: 434px;
+	    margin-left: -431.5px;
+	    margin-top: 50px;
+	    margin-bottom: 50px;
+	}
+
+	.btn-group a{
+		margin: 0;
+		margin-top: 10px;
+	}
+
+}
+
+@media(max-width: 560px){
+	.desk-nav{
+		display: none;
+	}
+
+	.mobile-nav{
+		display: block;
+	}
+	nav{
+		top: 0;
+	}
+}
+
+h1{
+	text-align:center;
+	color:#26CEFF;
+	font-family: 'Pacifico', cursive;
+}
+
+.banner{
+	margin-left:350px;
+	padding:100px;
+	width: 40%;
+    position:absolute;
+	
+}
+
+.table{
+	margin-top:110px;
+	width:500px;
+	margin-left:1000px;
+}
+
+.table-hover{
+	margin-left:54%;
+}
+ul{
+
+	font-size:.9rem;
+	font-family: 'Pacifico', cursive;
+	margin-left:56%;
+	margin-top:1%;
+	color:#E84E60;
+}
+.rent-button{
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5rem;
+	margin-left:60%;
+	margin-top:12%;
+	display:inline-block;
+}
+.footer-1{
+	margin-top: 120px;
+	background-color: #879488;
+	opacity: .6;
+}
