@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-
-.information-introduce{
-	text-align:center;
-}
-
-=======
->>>>>>> origin/master
 *{
 	box-sizing: border-box;
 }
@@ -17,9 +9,6 @@ html{
 
 .welcome-page{
 	background-size:auto; 
-<<<<<<< HEAD
-	display: block;
-=======
 	display: none;
 }
 
@@ -28,7 +17,6 @@ html{
 }
 
 .for-rent{
->>>>>>> origin/master
 	display: none;
 }
 
@@ -51,8 +39,6 @@ html{
 	font-family: 'Pacifico', cursive;
 }
 
-<<<<<<< HEAD
-=======
 .welcome-page-back{
 	width: 100%;
 	opacity: .5;
@@ -64,7 +50,6 @@ html{
 	width: 100%;
 	opacity: .5;
 	margin: 0;
->>>>>>> origin/master
 
 }
 
@@ -74,11 +59,6 @@ html{
 	width: 100%;
 	padding: 0 25%;
 	top: 400px;
-<<<<<<< HEAD
-	
-}
-
-=======
 	opacity: .8;
 }
 
@@ -93,7 +73,6 @@ html{
 	margin-top: 50px;
 	font-family: 'Architects Daughter', cursive;
 }
->>>>>>> origin/master
 
 
 .desk-nav li{
@@ -107,11 +86,7 @@ html{
 .desk-nav ul{
 	margin: 0;
 	text-align: right;
-<<<<<<< HEAD
-	right: 11%;
-=======
 	padding-right: 11%;
->>>>>>> origin/master
 }
 
 
@@ -128,10 +103,7 @@ html{
 	font-size: 3rem;
 	font-family: 'Pacifico', cursive;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 .btn-group a{
 	padding-right: 50px;
 	padding-left: 50px;
@@ -144,54 +116,6 @@ html{
     left: 50%;
     width: 863px;
     margin-left: -431.5px;
-<<<<<<< HEAD
-
-}
-h1{
-	text-align:center;
-	color:#26CEFF;
-	font-family: 'Pacifico', cursive;
-}
-
-.banner{
-	margin-left:350px;
-	padding:100px;
-	width: 40%;
-    position:absolute;
-	
-}
-
-
-
-.table{
-	margin-top:110px;
-	width:500px;
-	margin-left:1000px;
-}
-
-.table-hover{
-	margin-left:54%;
-}
-ul{
-
-	font-size:.9rem;
-	font-family: 'Pacifico', cursive;
-	margin-left:56%;
-	margin-top:1%;
-	color:#E84E60;
-}
-.rent-button{
-	font-family: 'Pacifico', cursive;
-	font-size: 1.5rem;
-	margin-left:60%;
-	margin-top:12%;
-	display:inline-block;
-}
-.footer-1{
-	margin-top: 120px;
-	background-color: #879488;
-	opacity: .6;
-=======
 }
 
 .thumbnails{
@@ -396,4 +320,3 @@ transition-delay:.2s;
 		top: 0;
 	}
 }
->>>>>>> origin/master
