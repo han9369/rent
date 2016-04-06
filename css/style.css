@@ -7,17 +7,12 @@ html{
 	margin: 0;
 }
 
-.welcome-page{
-	background-size:auto; 
+.rent{
 	display: block;
 }
 
-.rent{
-	display: none;
-}
-
 .for-rent{
-	display: none;
+	display: block;
 }
 
 .center{
@@ -65,7 +60,7 @@ html{
 .p1-button button{
 	display: inline-block;
 	border-radius: 180px;
-	font-size: 50px;
+	font-size: 20px;
 	padding: 25px 35px;
 }
 
@@ -104,7 +99,7 @@ html{
 	font-family: 'Pacifico', cursive;
 }
 
-.btn-group a{
+.btn-group select{
 	padding-right: 50px;
 	padding-left: 50px;
 	margin-left: 30px;
@@ -282,7 +277,7 @@ transition-delay:.2s;
 	    margin-left: -431.5px;
 	}
 
-	.btn-group a{
+	.btn-group select{
 		padding-right: 50px;
 		padding-left: 50px;
 		margin-left: 0px;
@@ -301,7 +296,7 @@ transition-delay:.2s;
 	    margin-bottom: 50px;
 	}
 
-	.btn-group a{
+	.btn-group select{
 		margin: 0;
 		margin-top: 10px;
 	}

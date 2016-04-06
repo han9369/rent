@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="people">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
@@ -13,38 +13,7 @@
 </head>
 
 <body>
-
-<!-- Page-1 --><!-- Page-1 --><!-- Page-1 --><!-- Page-1 -->
-	<div class="welcome-page">
-
-		<img class="welcome-page-back padding-free bg" src="img/p1-2.jpg">
-		<img class="welcome-page-back1 padding-free bg" src="img/p1-3.jpg"> 
-
-		
-		<div class="p1-text">
-			<h1 class="h1-1 center">Rent-Me</h1>
-		</div>
-
-		<div class="p1-button">
-			<div>
-			<button type="button" class="btn btn-success bu1">I Want RENT</button>
-			</div>
-			<div>
-			<button type="button" class="btn btn-success bu2">Ready For RENT</button>
-			</div>
-		</div>
-
-		<footer class="footer-1 center">
-			<p>-</p>
-			<p><a href="">Contact and Support</a>  |  http://han9369.github.io/rent  |  <a>简体中文</a> <br> Cearte by Han, Dean, Edison</p>
-			<p>-</p>
-		</footer>
-
-	</div>
-<!-- Page-1 --><!-- Page-1 --><!-- Page-1 --><!-- Page-1 -->
-
-
-<!-- Page-2 --><!-- Page-2 --><!-- Page-2 --><!-- Page-2 -->
+	<!-- Page-2 --><!-- Page-2 --><!-- Page-2 --><!-- Page-2 -->
 	<div class="rent">
 
 		<div class="p2-text">
@@ -74,196 +43,51 @@
 
 
 		<div class="btn-group">
-  			<a class="btn dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">Gender<span class="caret"></span></a>
-  			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-			  	<li><a tabindex="-1" href="#">Regular link</a></li>
-			  	<li><a tabindex="-1" href="#">Another link</a></li>
-			</ul>
+			<select class="btn btn btn-success">
+				<option value ="Female">Female</option>
+				<option value ="Male">Male</option>
+			</select>
 
-			<a class="btn dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">Ages<span class="caret"></span></a>
-  			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-			  	<li><a tabindex="-1" href="#">Regular link</a></li>
-			  	<li><a tabindex="-1" href="#">Another link</a></li>
-			</ul>
+			<select class="btn btn btn-success">
+				<option value ="19">Age: 19-22</option>
+				<option value ="23">Age: 23-26</option>
+				<option value ="27">Age: 27-30</option>
+				<option value ="30">Age: above 30</option>
+			</select>
 
-			<a class="btn dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">City<span class="caret"></span></a>
-  			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-			  	<li><a tabindex="-1" href="#">Regular link</a></li>
-			  	<li><a tabindex="-1" href="#">Another link</a></li>
-			</ul>
+			<select class="btn btn btn-success">
+				<option value ="19">price: under 10</option>
+				<option value ="23">price: 10-50</option>
+				<option value ="27">price: 50-100</option>
+				<option value ="30">price: above 100</option>
+			</select>
 
-			<a class="btn dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">Price<span class="caret"></span></a>
-  			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-			  	<li><a tabindex="-1" href="#">Regular link</a></li>
-			  	<li><a tabindex="-1" href="#">Another link</a></li>
-			</ul>
-
-			<a class="btn dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">Keyword<span class="caret"></span></a>
-  			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-			  	<li><a tabindex="-1" href="#">Regular link</a></li>
-			  	<li><a tabindex="-1" href="#">Another link</a></li>
-			</ul>
-  				
-  			</ul>
 		</div>
 
+	</div>
 
-
-		<ul class="thumbnails center">
-	  		<li class="span4">
-	    		<div class="thumbnail img-responsive">
-      				<!-- <img src="img/photo/g1.jpeg" style="width: 300px; height: 300px;"> -->
-      				<div class="hovereffect">
-       	 				<img class="img-responsive" src="img/photo/g1.jpeg" style="width: 300px; height: 300px;">
-            			<div class="overlay">
-           					<a class="info" href="#">Click for more photo!</a>
-           			 	</div>
-   					</div>
-   					<p> &nbsp </p>
-      				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> 21  &nbsp | &nbsp  
-      				<span class="label label-warning">$</span> $30/hr</h4> 
-      				<p> &nbsp </p>   		
-      				<button type="button" class="btn btn-danger rent-button">Rent-me</button>
-    			</div>
-	  		</li>
-
-	  		<li class="span4">
-	    		<div class="thumbnail">
-      				<div class="hovereffect">
-       	 				<img class="img-responsive" src="img/photo/b1.jpeg" style="width: 300px; height: 300px;">
-            			<div class="overlay">
-           					<a class="info" href="#">Click for more photo!</a>
-           			 	</div>
-   					</div>
-   					<p> &nbsp </p>
-      				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> 21  &nbsp | &nbsp  
-      				<span class="label label-warning">$</span> $30/hr</h4> 
-      				<p> &nbsp </p>   		
-      				<button type="button" class="btn btn-danger rent-button">Rent-me</button>
-    			</div>
-	  		</li>
-
-	  		<li class="span4">
-	    		<div class="thumbnail">
-      				<div class="hovereffect">
-       	 				<img class="img-responsive" src="img/photo/g2.jpeg" style="width: 300px; height: 300px;">
-            			<div class="overlay">
-           					<a class="info" href="#">Click for more photo!</a>
-           			 	</div>
-   					</div>
-   					<p> &nbsp </p>
-      				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> 21  &nbsp | &nbsp  
-      				<span class="label label-warning">$</span> $30/hr</h4> 
-      				<p> &nbsp </p>   		
-      				<button type="button" class="btn btn-danger rent-button">Rent-me</button>
-    			</div>
-	  		</li>
-		</ul>
-
-		<ul class="thumbnails center">
-	  		<li class="span4">
-	    		<div class="thumbnail">
-      				<div class="hovereffect">
-       	 				<img class="img-responsive" src="img/photo/b1.jpeg" style="width: 300px; height: 300px;">
-            			<div class="overlay">
-           					<a class="info" href="#">Click for more photo!</a>
-           			 	</div>
-   					</div>
-   					<p> &nbsp </p>
-      				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> 21  &nbsp | &nbsp  
-      				<span class="label label-warning">$</span> $30/hr</h4> 
-      				<p> &nbsp </p>   		
-      				<button type="button" class="btn btn-danger rent-button">Rent-me</button>
-    			</div>
-	  		</li>
-
-	  		<li class="span4">
-	    		<div class="thumbnail">
-      				<div class="hovereffect">
-       	 				<img class="img-responsive" src="img/photo/g3.jpeg" style="width: 300px; height: 300px;">
-            			<div class="overlay">
-           					<a class="info" href="#">Click for more photo!</a>
-           			 	</div>
-   					</div>
-   					<p> &nbsp </p>
-      				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> 21  &nbsp | &nbsp  
-      				<span class="label label-warning">$</span> $30/hr</h4> 
-      				<p> &nbsp </p>   		
-      				<button type="button" class="btn btn-danger rent-button">Rent-me</button>
-    			</div>
-	  		</li>
-
-	  		<li class="span4">
-	    		<div class="thumbnail">
-      				<div class="hovereffect">
-       	 				<img class="img-responsive" src="img/photo/g4.jpg" style="width: 300px; height: 300px;">
-            			<div class="overlay">
-           					<a class="info" href="#">Click for more photo!</a>
-           			 	</div>
-   					</div>
-   					<p> &nbsp </p>
-      				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> 21  &nbsp | &nbsp  
-      				<span class="label label-warning">$</span> $30/hr</h4> 
-      				<p> &nbsp </p>   		
-      				<button type="button" class="btn btn-danger rent-button">Rent-me</button>
-    			</div>
-	  		</li>
-		</ul>
-
-		<ul class="thumbnails center">
-	  		<li class="span4">
-	    		<div class="thumbnail">
-      				<div class="hovereffect">
-       	 				<img class="img-responsive" src="img/photo/g5.jpeg" style="width: 300px; height: 300px;">
-            			<div class="overlay">
-           					<a class="info" href="#">Click for more photo!</a>
-           			 	</div>
-   					</div>
-   					<p> &nbsp </p>
-      				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> 21  &nbsp | &nbsp  
-      				<span class="label label-warning">$</span> $30/hr</h4> 
-      				<p> &nbsp </p>   		
-      				<button type="button" class="btn btn-danger rent-button">Rent-me</button>
-    			</div>
-	  		</li>
-
-	  		<li class="span4">
-	    		<div class="thumbnail">
-      				<div class="hovereffect">
-       	 				<img class="img-responsive" src="img/photo/b3.jpeg" style="width: 300px; height: 300px;">
-            			<div class="overlay">
-           					<a class="info" href="#">Click for more photo!</a>
-           			 	</div>
-   					</div>
-   					<p> &nbsp </p>
-      				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> 21  &nbsp | &nbsp  
-      				<span class="label label-warning">$</span> $30/hr</h4> 
-      				<p> &nbsp </p>   		
-      				<button type="button" class="btn btn-danger rent-button">Rent-me</button>
-    			</div>
-	  		</li>
-
-	  		<li class="span4">
-	    		<div class="thumbnail">
-      				<div class="hovereffect">
-       	 				<img class="img-responsive" src="img/photo/b4.jpeg" style="width: 300px; height: 300px;">
-            			<div class="overlay">
-           					<a class="info" href="#">Click for more photo!</a>
-           			 	</div>
-   					</div>
-   					<p> &nbsp </p>
-      				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> 21  &nbsp | &nbsp  
-      				<span class="label label-warning">$</span> $30/hr</h4> 
-      				<p> &nbsp </p>   		
-      				<button type="button" class="btn btn-danger rent-button">Rent-me</button>
-    			</div>
-	  		</li>
-		</ul>
+	<ul class="thumbnails center"  ng-controller="PeopleController as people">
+		<li ng-repeat="pp in people.person" class="span4">
+			<div class="thumbnail img-responsive">
+				<div class="hovereffect">
+					<img class="img-responsive" src="img/photo/{{pp.photo}}" style="width: 300px; height: 300px;">
+					<div class="overlay">
+						<a class="info" href="#">Click for more photo!</a>
+					</div>
+				</div>
+				<p> &nbsp </p>
+				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> {{pp.age}}  &nbsp | &nbsp  
+					<span class="label label-warning">$</span>$ {{pp.rate}}/hr</h4> 
+					<p> &nbsp </p>   		
+					<button type="button" class="btn btn-danger rent-button">Rent-me</button>
+			</div>
+		</li>
+	</ul>
 
 		<ul class="pagination">
 			<li>
 				<a href="#" aria-label="Previous">
-				    <span aria-hidden="true">&laquo;</span>
+					<span aria-hidden="true">&laquo;</span>
 				</a>
 			</li>
 			<li><a href="#">1</a></li>
@@ -274,18 +98,18 @@
 			<li><a href="#">More</a></li>
 			<li>
 				<a href="#" aria-label="Next">
-				    <span aria-hidden="true">&raquo;</span>
+					<span aria-hidden="true">&raquo;</span>
 				</a>
 			</li>
 		</ul>
 
 		<ul class="pager">
-	  		<li class="previous">
-	    	<a href="#">&larr; Previous</a>
-	  		</li>
-	  		<li class="next">
-	    	<a href="#"> Next &rarr;</a>
-	  		</li>
+			<li class="previous">
+				<a href="#">&larr; Previous</a>
+			</li>
+			<li class="next">
+				<a href="#"> Next &rarr;</a>
+			</li>
 		</ul>
 
 		<footer class="footer-1 center">
@@ -295,111 +119,10 @@
 		</footer>
 
 	</div>
-<!-- Page-2 --><!-- Page-2 --><!-- Page-2 --><!-- Page-2 -->
-
-
-<!-- Page-3 --><!-- Page-3 --><!-- Page-3 --><!-- Page-3 -->
-	<div class="for-rent">
-		
-		<div class="p2-text">
-			<h1 class="h1-1">Rent-Me</h1>
-		</div>
-
-		<nav class="desk-nav">
-			<ul class="padding-free">
-				<li><a href="index.html"><i class="fa fa-circle-o-notch"></i> Home</a></li>
-				<li><a href="contact.html"><i class="fa fa-circle-o-notch"></i> About</a></li>
-				<li><a href="" ><i class="fa fa-circle-o-notch"></i> Investors</a></li>
-				<li><a href=""><i class="fa fa-circle-o-notch"></i> Careers</a></li>
-			</ul>
-		</nav>
-
-		<nav class="mobile-nav">
-			<div class="hamburger">
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</nav>
-
-		<div class="p2-1 center">
-			<img  src="img/p2-1.jpg">
-		</div>
-
-		<form class="form-horizontal">
-			<div class="form-group">
-			    <label for="exampleInputPassword1">Sign In</label>
-	  		</div>
-
-			<div class="form-group">
-			    <label for="exampleInputPassword1">Nick Name</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
-	  		</div>
-
-	  		<div class="form-group">
-	  			<label for="exampleInputPassword1">Gender</label>
-		  		<select class="form-control">
-		  			<option>boy</option>
-		  			<option>girl</option>
-				</select>
-			</div>
-	  		<div class="form-group">
-			    <label for="exampleInputPassword1">Age</label>
-			    <select class="form-control">
-		  			<option>Under 20</option>
-		  			<option>20-23</option>
-		  			<option>24-27</option>
-		  			<option>28-30</option>
-		  			<option>Above 30</option>
-				</select>
-	  		</div>
-	  		<div class="form-group">
-			    <label for="exampleInputPassword1">Price</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Price(CAD)">
-	  		</div>
-			
-			<div class="form-group">
-				<label for="exampleInputPassword1">Description</label>
-				<textarea class="form-control" rows="3" placeholder="Describe yourself"></textarea>
-			</div>
-
-	  		<div class="form-group">
-			    <label for="exampleInputEmail1">Email address</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-	  		</div>
-	  		<div class="form-group">
-			    <label for="exampleInputPassword1">Phone Number</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="+1-xxx-xxx-xxxx">
-	  		</div>
-	  		<div class="form-group">
-			    <label for="exampleInputFile">Photo</label>
-			    <input type="file" id="exampleInputFile">
-			    <p class="help-block">Upload your photo here.</p>
-			 </div>
-			 <div class="form-group">
-			 	<img src="..." alt="Photo" class="img-rounded">
-			 </div>
-	  		<div class="checkbox form-group">
-			    <label>
-			      <input type="checkbox"><a href="">I accept the terms and conditions of submission</a>
-			    </label>
-	  		</div>
-	  		<div>
-	  			<button type="submit" class="btn btn-success form-group">Submit</button>
-	  		</div>
-		</form>
-
-		<footer class="footer-1 center">
-			<p>-</p>
-			<p><a href="">Contact and Support</a>  |  http://han9369.github.io/rent  |  <a>简体中文</a> <br> Cearte by Han, Dean, Edison</p>
-			<p>-</p>
-		</footer>
-
-
-	</div>
-<!-- Page-3 --><!-- Page-3 --><!-- Page-3 --><!-- Page-3 -->
+	<!-- Page-2 --><!-- Page-2 --><!-- Page-2 --><!-- Page-2 -->
+	<script src="js/angular.min.js"></script>
 	<script src="js/jquery-1.12.2.min.js"></script>
-  	<script src="js/index.js"></script>
+	<script src="js/index.js"></script>
 
 </body>
 </html>
