@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Rent-Me</title>
+  <link rel="shortcut icon" href="http://www.templatemonster.com/favicon.ico">
+  <link rel="icon" href="http://www.templatemonster.com/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/welcome.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+  <script type="text/javascript" src="js/video.js"></script>
+  <script type="text/javascript" src="js/bigvideo.js"></script>
+</head>
+<body>
+	<!-- Page-1 --><!-- Page-1 --><!-- Page-1 --><!-- Page-1 -->
+	<div class="welcome-page">
+
+			<div id="blockcontent"></div>
+		    <div class="p1-text">
+				<h1 class="h1-1 center">Rent-Me</h1>
+			</div>
+		    <div class="p1-button">
+				<div>
+					<button onclick="{location.href='index.html'}" type="button" class="btn btn-success bu1">I Want RENT</button>
+				</div>
+				<div>
+					<button onclick="{location.href='forrent.html'}" type="button" class="btn btn-success bu2">Ready For RENT</button>
+				</div>
+			</div>
+
+		<script type="text/javascript">
+			/**
+			 * video source: http://beachfrontprod.blogspot.com/2011/09/random-footage-clip-2.html
+			 */
+			$(function() {
+			  var BV = new $.BigVideo({useFlashForFirefox:false});
+			    
+			  BV.init();
+			  BV.show('media/rochester-falls.mp4', {altSource:'media/rochester-falls.mp4', ambient: true});
+			});
+		</script>
+
+	</div>
+</body>
+</html>

@@ -1,50 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="people">
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  <title>Rent-Me</title>
-  <link rel="shortcut icon" href="http://www.templatemonster.com/favicon.ico">
-  <link rel="icon" href="http://www.templatemonster.com/favicon.ico">
-  <link rel="stylesheet" type="text/css" media="all" href="css/welcome.css">
-  <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
-  <script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
-  <script type="text/javascript" src="js/video.js"></script>
-  <script type="text/javascript" src="js/bigvideo.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Rent-Me</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+
 </head>
+
 <body>
-	<!-- Page-1 --><!-- Page-1 --><!-- Page-1 --><!-- Page-1 -->
-	<div class="welcome-page">
+	<!-- Page-2 --><!-- Page-2 --><!-- Page-2 --><!-- Page-2 -->
+	<div class="rent">
 
-			<div id="blockcontent"></div>
-		    <div class="p1-text">
-				<h1 class="h1-1 center">Rent-Me</h1>
-			</div>
-		    <div class="p1-button">
-				<div>
-					<button onclick="{location.href='index2.html'}" type="button" class="btn btn-success bu1">I Want RENT</button>
-				</div>
-				<div>
-					<button onclick="{location.href='forrent.html'}" type="button" class="btn btn-success bu2">Ready For RENT</button>
-				</div>
-			</div>
+		<div class="p2-text">
+			<h1 class="h1-1">Rent-Me</h1>
+		</div>
 
-		<script type="text/javascript">
-			/**
-			 * video source: http://beachfrontprod.blogspot.com/2011/09/random-footage-clip-2.html
-			 */
-			$(function() {
-			  var BV = new $.BigVideo({useFlashForFirefox:false});
-			    
-			  BV.init();
-			  BV.show('media/rochester-falls.mp4', {altSource:'media/rochester-falls.mp4', ambient: true});
-			});
-		</script>
+		<nav class="desk-nav">
+			<ul class="padding-free">
+				<li><a href="index.html"><i class="fa fa-circle-o-notch"></i> Home</a></li>
+				<li><a href="contact.html"><i class="fa fa-circle-o-notch"></i> About</a></li>
+				<li><a href="" ><i class="fa fa-circle-o-notch"></i> Investors</a></li>
+				<li><a href=""><i class="fa fa-circle-o-notch"></i> Careers</a></li>
+			</ul>
+		</nav>
+
+		<nav class="mobile-nav">
+			<div class="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</nav>
+
+		<div class="p2-1 center">
+			<img  src="img/p2-1.jpg">
+		</div>
+
+
+		<div class="btn-group">
+			<select class="btn btn btn-success">
+				<option value ="Female">Female</option>
+				<option value ="Male">Male</option>
+			</select>
+
+			<select class="btn btn btn-success">
+				<option value ="19">Age: 19-22</option>
+				<option value ="23">Age: 23-26</option>
+				<option value ="27">Age: 27-30</option>
+				<option value ="30">Age: above 30</option>
+			</select>
+
+			<select class="btn btn btn-success">
+				<option value ="19">price: under 10</option>
+				<option value ="23">price: 10-50</option>
+				<option value ="27">price: 50-100</option>
+				<option value ="30">price: above 100</option>
+			</select>
+
+		</div>
 
 	</div>
+
+	<ul class="thumbnails center"  ng-controller="PeopleController as people">
+		<li ng-repeat="pp in people.person" class="span4">
+			<div class="thumbnail img-responsive">
+				<div class="hovereffect">
+					<img class="img-responsive" src="img/photo/{{pp.photo}}" style="width: 300px; height: 300px;">
+					<div class="overlay">
+						<a class="info" href="#">Click for more photo!</a>
+					</div>
+				</div>
+				<p> &nbsp </p>
+				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> {{pp.age}}  &nbsp | &nbsp  
+					<span class="label label-warning">$</span>$ {{pp.rate}}/hr</h4> 
+					<p> &nbsp </p>   		
+					<button type="button" class="btn btn-danger rent-button">Rent-me</button>
+			</div>
+		</li>
+	</ul>
+
+		<ul class="pagination">
+			<li>
+				<a href="#" aria-label="Previous">
+					<span aria-hidden="true">&laquo;</span>
+				</a>
+			</li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">More</a></li>
+			<li>
+				<a href="#" aria-label="Next">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="pager">
+			<li class="previous">
+				<a href="#">&larr; Previous</a>
+			</li>
+			<li class="next">
+				<a href="#"> Next &rarr;</a>
+			</li>
+		</ul>
+
+		<footer class="footer-1 center">
+			<p>-</p>
+			<p><a href="">Contact and Support</a>  |  http://han9369.github.io/rent  |  <a>简体中文</a> <br> Cearte by Han, Dean, Edison</p>
+			<p>-</p>
+		</footer>
+
+	</div>
+	<!-- Page-2 --><!-- Page-2 --><!-- Page-2 --><!-- Page-2 -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/index.js"></script>
+
 </body>
 </html>
