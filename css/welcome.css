@@ -73,6 +73,30 @@ a:hover { color: #749cdf; }
 }
 
 
+
+#blockcontent2 {
+  position: absolute;
+  text-align: center;
+  display: block;
+  left: 50%;
+  width: 520px;
+  margin-left: -260px;
+  height: 300px;
+  margin-top: 155px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.75);
+}
+
+#login {
+  margin-left: 25px;
+  margin-right: 25px;
+  
+}
+
+
 /* BigVideo Styles */
 #big-video-wrap{overflow:hidden;position:fixed;height:100%;width:100%;top:0;left:0;}
 #big-video-vid,#big-video-image{position:absolute;}

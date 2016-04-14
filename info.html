@@ -2,17 +2,46 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Personal Information</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style2.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<title>Rent-Me</title>
-	
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
-<div class="rent">
+	<div class="rent">
+
+		<div class="blockcontent3">
+			<p style="text-align: center;">welcome !</p>
+			<p style="text-align: center;">Han</p>
+			<img src="img/aaaa.jpg" style="text-align: center; height: 80px; width: 80px;">
+			<button class="btn btn-info log-bu" >Portfolio</button>
+			<button class="btn btn-danger log-bu" onclick="{location.href='welcome.html'}" >Log Out</button>
+		</div>
+
+		<div class="blockcontent4">
+			<p style="text-align: center;">Chat with Michelle <button id="hide-btn" class="btn btn-info" >Close</button></p>
+
+
+			<div class="jumbotron">
+				<div class="container">
+					<p> &nbsp</p>
+					<p> &nbsp</p>
+					<p> &nbsp</p>
+					<p> &nbsp</p>
+					<p> &nbsp</p>
+				</div>
+			</div>
+
+			<div class="form-inline" style="text-align: center;">
+				<input class="form-control" type="text" >
+				<button class="btn btn-success" >Send</button>
+			</div>
+		</div>
 
 		<div class="p2-text">
 			<h1 class="h1-1">Rent-Me</h1>
@@ -20,14 +49,12 @@
 
 		<nav class="desk-nav">
 			<ul class="padding-free">
-				<li><a></i> Home</a></li>
-				<li><a></i> About</a></li>
-				<li><a></i> Investors</a></li>
-				<li><a></i> Careers</a></li>
+				<li><a href="index.html"><i class="fa fa-circle-o-notch"></i> Home</a></li>
+				<li><a href=""><i class="fa fa-circle-o-notch"></i> About</a></li>
+				<li><a href="" ><i class="fa fa-circle-o-notch"></i> Investors</a></li>
+				<li><a href="contact.html"><i class="fa fa-circle-o-notch"></i> Contact Us</a></li>
 			</ul>
 		</nav>
-
-
 
 		<nav class="mobile-nav">
 			<div class="hamburger">
@@ -37,95 +64,92 @@
 			</div>
 		</nav>
 
-
 		<div class="p2-1 center">
 			<img  src="img/p2-1.jpg">
 		</div>
 
-		<div class="btn-group">
-  			<a class="btn dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">Gender<span class="caret"></span></a>
-  			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-			  	<li><a tabindex="-1" href="#">Regular link</a></li>
-			  	<li><a tabindex="-1" href="#">Another link</a></li>
-			</ul>
+		<h1 class="introduction page-top">Personal Information</h1>
 
-			<a class="btn dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">Ages<span class="caret"></span></a>
-  			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-			  	<li><a tabindex="-1" href="#">Regular link</a></li>
-			  	<li><a tabindex="-1" href="#">Another link</a></li>
-			</ul>
+		<div id="carousel-example-generic" class="carousel slide infokk" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			</ol>
 
-			<a class="btn dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">City<span class="caret"></span></a>
-  			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-			  	<li><a tabindex="-1" href="#">Regular link</a></li>
-			  	<li><a tabindex="-1" href="#">Another link</a></li>
-			</ul>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img class="info-pic banner" src="img/banner.jpg" style="width: 470px; height: 450px;">
+				</div>
+				<div class="item">
+					<img class="info-pic" src="img/photo/g1.jpeg" style="width: 470px; height: 450px;">
+				</div>
+			</div>
 
-			<a class="btn dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">Price<span class="caret"></span></a>
-  			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-			  	<li><a tabindex="-1" href="#">Regular link</a></li>
-			  	<li><a tabindex="-1" href="#">Another link</a></li>
-			</ul>
-
-			<a class="btn dropdown-toggle btn btn-success" data-toggle="dropdown" href="#">Keyword<span class="caret"></span></a>
-  			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-			  	<li><a tabindex="-1" href="#">Regular link</a></li>
-			  	<li><a tabindex="-1" href="#">Another link</a></li>
-			</ul>
-  				
-  			</ul>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			</a>
 		</div>
-<h1 calss="introduction page-top">Personal Information</h1>
-<img class="banner"src="img/banner.jpg">
 
-<div calss="banner-table">
 
-<table class="table center">
-<tr>
-  <td class="active">Name</td>
-  <td class="success">Age</td>
-  <td class="warning">Location</td>
-  <td class="danger">Hobbies</td>
-  <td class="info">Price</td>
-</tr>
-<tr>
-      <td>Michelle</td>
-      <td>22</td>
-      <td>Vancouver</td>
-      <td>Movie and Shopping</td>
-      <td>$30/hr</td>
-      
-    </tr>
-</table>
-<table class="table table-hover">
-<tr>
-<td><i class="fa fa-venus-double"></i><Strong>Constellation</Strong></td>
-<td><i class="fa fa-shopping-bag"></i><strong>Job</strong></td>
-<td><i class="fa fa-female"></i><strong>Height</strong></td>
-<td><i class="fa fa-balance-scale"></i><strong>Weight</strong></td>
-<td><i class="fa fa-calendar"></i><strong>Availability</strong></td>
-</tr>
-<tr>
-	<td>Scorpio</td>
-	<td>Student</td>
-	<td>168cm</td>
-	<td>50kg</td>
-	<td>Depends</td>
-</tr>
-</table>
 
-<button type="button" class="btn btn-danger rent-button">Rent Now!</button>
-<nav class"desk-register">
-<ul class="register">
-<li><a></i> or Register Now for More Information</a></li>
-</ul>
-</nav>
-</div>
+		<div class="banner-table table-1">
+			<table class="table center">
+				<tr>
+					<td class="active">Name</td>
+					<td class="success">Age</td>
+					<td class="warning">Location</td>
+					<td class="danger">Hobbies</td>
+					<td class="info">Price</td>
+				</tr>
+				<tr>
+					<td>Michelle</td>
+					<td>22</td>
+					<td>Vancouver</td>
+					<td>Movie and Shopping</td>
+					<td>$30/hr</td>
 
-<footer class="footer-1 center">
+				</tr>
+			</table>
+
+			<table class="table table-hover center">
+				<tr>
+					<td><i class="fa fa-venus-double"></i><Strong>Constellation</Strong></td>
+					<td><i class="fa fa-shopping-bag"></i><strong>Job</strong></td>
+					<td><i class="fa fa-female"></i><strong>Height</strong></td>
+					<td><i class="fa fa-balance-scale"></i><strong>Weight</strong></td>
+					<td><i class="fa fa-calendar"></i><strong>Availability</strong></td>
+				</tr>
+				<tr>
+					<td>Scorpio</td>
+					<td>Student</td>
+					<td>168cm</td>
+					<td>50kg</td>
+					<td>Depends</td>
+				</tr>
+			</table>
+
+			<div class="center bbb">
+				<button id="show-btn" type="button" class="btn btn-danger rent-button">Chat With Me!</button>
+			</div>
+		</div>
+
+		
+
+		<footer class="footer-1 center">
 			<p>-</p>
 			<p><a href="">Contact and Support</a>  |  http://han9369.github.io/rent  |  <a>简体中文</a> <br> Cearte by Han, Dean, Edison</p>
 			<p>-</p>
 		</footer>
-</body>
-</html>
+
+		<script src="js/jquery-1.12.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/info.js"></script>
+
+	</body>
+	</html>
