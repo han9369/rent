@@ -9,13 +9,21 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body>
 	<!-- Page-2 --><!-- Page-2 --><!-- Page-2 --><!-- Page-2 -->
-	<div class="rent">
 
+	<div class="blockcontent3">
+		<p style="text-align: center;">welcome !</p>
+		<p style="text-align: center;">Han</p>
+		<img src="img/aaaa.jpg" style="text-align: center; height: 80px; width: 80px;">
+		<button class="btn btn-info log-bu" >Portfolio</button>
+		<button class="btn btn-danger log-bu" onclick="{location.href='welcome.html'}" >Log Out</button>
+	</div>
+
+
+	<div class="rent">
 		<div class="p2-text">
 			<h1 class="h1-1">Rent-Me</h1>
 		</div>
@@ -23,9 +31,9 @@
 		<nav class="desk-nav">
 			<ul class="padding-free">
 				<li><a href="index.html"><i class="fa fa-circle-o-notch"></i> Home</a></li>
-				<li><a href="contact.html"><i class="fa fa-circle-o-notch"></i> About</a></li>
+				<li><a href=""><i class="fa fa-circle-o-notch"></i> About</a></li>
 				<li><a href="" ><i class="fa fa-circle-o-notch"></i> Investors</a></li>
-				<li><a href=""><i class="fa fa-circle-o-notch"></i> Careers</a></li>
+				<li><a href="contact.html"><i class="fa fa-circle-o-notch"></i> Contact Us</a></li>
 			</ul>
 		</nav>
 
@@ -44,11 +52,13 @@
 
 		<div class="btn-group">
 			<select class="btn btn btn-success">
+				<option value ="All">Gender: All</option>
 				<option value ="Female">Female</option>
 				<option value ="Male">Male</option>
 			</select>
 
 			<select class="btn btn btn-success">
+				<option value ="age-all">Age: All</option>
 				<option value ="19">Age: 19-22</option>
 				<option value ="23">Age: 23-26</option>
 				<option value ="27">Age: 27-30</option>
@@ -56,33 +66,65 @@
 			</select>
 
 			<select class="btn btn btn-success">
+				<option value ="price-all">price: All</option>
 				<option value ="19">price: under 10</option>
 				<option value ="23">price: 10-50</option>
 				<option value ="27">price: 50-100</option>
 				<option value ="30">price: above 100</option>
 			</select>
 
+			<select class="btn btn btn-success">
+				<option value ="location-all">Location: All</option>
+				<option value ="Vancouver">Vancouver</option>
+				<option value ="Calgary">Calgary</option>
+				<option value ="Toronto">Toronto</option>
+				<option value ="Montreal">Montreal</option>
+			</select>
 		</div>
 
 	</div>
 
-	<ul class="thumbnails center"  ng-controller="PeopleController as people">
-		<li ng-repeat="pp in people.person" class="span4">
-			<div class="thumbnail img-responsive">
-				<div class="hovereffect">
+	<ul class="thumbnails center ulppp" ng-controller="PeopleController as people">
+		<li class="span4 ppp" ng-repeat="pp in people.person" >
+			<div class="thumbnail img-responsive" ng-show="pp.gender">
+				<div class="hovereffect"  data-toggle="modal" data-target="#more-modal-{{pp.num}}">
 					<img class="img-responsive" src="img/photo/{{pp.photo}}" style="width: 300px; height: 300px;">
-					<div class="overlay">
+					<div class="overlay ">
 						<a class="info" href="#">Click for more photo!</a>
 					</div>
 				</div>
 				<p> &nbsp </p>
 				<h4><i class="fa fa-female"></i>  &nbsp | &nbsp  <span class="label label-warning">Age</span> {{pp.age}}  &nbsp | &nbsp  
-					<span class="label label-warning">$</span>$ {{pp.rate}}/hr</h4> 
-					<p> &nbsp </p>   		
-					<button type="button" class="btn btn-danger rent-button">Rent-me</button>
+				<span class="label label-warning">$</span> {{pp.rate}}/hr</h4> 
+				<p> &nbsp </p>   		
+				<button onclick="{location.href='info.html'}" type="button" class="btn btn-danger rent-button">Rent-me</button>
+			
+				<div class="modal fade" id="more-modal-{{pp.num}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-controller="PeopleController as people">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">{{pp.name}}</h4>
+							</div>
+
+							<div class="modal-body">
+								<img src="img/photo/{{pp.photo}}" style="width: 360px; height: 360px;">
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger rent-button" onclick="{location.href='info.html'}" data-dismiss="modal">Rent-Me</button>
+								<button type="button" class="btn btn-success rent-button" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</li>
 	</ul>
+
+	
+
 
 		<ul class="pagination">
 			<li>
@@ -123,6 +165,7 @@
 	<script src="js/angular.min.js"></script>
 	<script src="js/jquery-1.12.2.min.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
